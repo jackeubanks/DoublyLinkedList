@@ -1,0 +1,76 @@
+===========================================================================
+README:  This file describes the contents of this repo and its intended use
+Author:  Jack Eubanks
+Date:    6/14/2024
+===========================================================================
+
+
+Compiling Requirements:
+----------------------------
+- A C++ compiler which supports C++ 11 (or higher version)
+
+
+Contents of this repo:
+-------------------------
+1. "dlist.h" - Defines a template class which can be used to implement a doubly-linked list.
+2. "LinkedListTest.cpp" - Test program for the doubly-linked list class, DList.
+3. "README" - (this file)
+
+
+
+
+===========================================================
+Sample Output from Test Program:
+===========================================================
+
+PS C:\Users\F4I27VT\Netbeans Projects\LinkedListTest\x64\Debug> .\LinkedListTest.exe
+---------------------------------------------------------------------
+Test #1: Add a reference to application data
+---------------------------------------------------------------------
+20
+
+---------------------------------------------------------------------
+Test #2: Modify the data & verify the change is reflected in the list
+---------------------------------------------------------------------
+777
+
+---------------------------------------------------------------------
+Test #3: Find an item at a specific location in the list
+---------------------------------------------------------------------
+List[3] = 4
+
+---------------------------------------------------------------------
+Test #4: Test for index out-of-bounds condition
+---------------------------------------------------------------------
+Invalid index: 7  (Size of list is: 4)
+
+---------------------------------------------------------------------
+Test #5: Test Printing the entire list
+---------------------------------------------------------------------
+List currently contains:
+List[0] = 777
+List[1] = 2
+List[2] = 3
+List[3] = 4
+
+---------------------------------------------------------------------
+Test #6: Test Removing an item from the list
+---------------------------------------------------------------------
+Removed Item containing: 3
+
+List now contains:
+List[0] = 777
+List[1] = 2
+List[2] = 4
+
+---------------------------------------------------------------------
+Test #7: Test Removing an element that doesn't exist
+---------------------------------------------------------------------
+Entry not found.
+
+---------------------------------------------------------------------
+Test #8: Test Removing an element from an empty list
+---------------------------------------------------------------------
+Cannot remove item from empty list - (List size: 0)
+
+PS C:\Users\F4I27VT\Netbeans Projects\LinkedListTest\x64\Debug>
