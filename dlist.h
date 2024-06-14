@@ -47,16 +47,16 @@ public:
     int size() { return m_size; }        // Return size of list
 
     // DList::add() - Add a new item to the list
-    void add(T* new_node) {
+    void add(T* t) {
         if (m_head == nullptr) {
             // Handle case of empty list
-            m_head = new Node<T>(new_node);
+            m_head = new Node<T>(t);
             m_tail = m_head;
             m_size = m_size + 1;
         }
         else {
             // Handle normal case 
-            m_tail->next = new Node<T>(new_node);
+            m_tail->next = new Node<T>(t);
             m_tail->next->prev = m_tail;
             m_tail = m_tail->next;
             m_tail->next = nullptr;
